@@ -1,141 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="app">
-        <div class="sidebar">
-           <div>
-                <div class="sidebar-logo">
-                    <img class="sidebar-logo-image" src="./assets/logo.jpg" alt="">
-                </div>
-                <div class="sidebar-list">
-                        <div class="sidebar-item">
-                            <div class="sidebar-item-image">
-                                <img class="sidebar-item-img" src="./assets/trade-active.png" alt="">
-                            </div>
-                            <span>Trade</span>
-                        </div>
-                        <div class="sidebar-item active">
-                            <div class="sidebar-item-image">
-                                <img class="sidebar-item-img" src="./assets/Orders.png" alt="">
-                            </div>
-                            <span>Orders</span>
-                        </div>
-                        <div class="menu-children active">
-                            All
-                        </div>
-                        <div class="menu-children">
-                            Open
-                        </div>
-                        <div class="sidebar-item">
-                            <div class="sidebar-item-image">
-                                <img class="sidebar-item-img" src="./assets/History.png" alt="">
-                            </div>
-                            <span>History</span>
-                        </div>
-                        <div class="sidebar-item">
-                            <div class="sidebar-item-image">
-                                <img class="sidebar-item-img" src="./assets/settings.png" alt="">
-                            </div>
-                            <span>Settings</span>
-                        </div>
-                </div>
-           </div>
-            <div class="deposit">
-                <div class="deposit-header">
-                    <div class="deposit-header-logo">
-                        <img src="./assets/Metamask.png" alt="">
-                    </div>
-                    <div class="deposit-header-content">
-                            <span class="deposit-header-content-top">
-                                0.000244 ETH
-                            </span>
-                            <span class="deposit-header-content-bot">0xGD63...6DS9</span>
-                    </div>
-                </div>
-                <div class="deposit-button-list">
-                    <button class="deposit-btn">Deposit</button>
-                    <button class="deposit-btn withdraw-btn">Withdraw</button>
-                </div>
-                <div class="collapse">
-                    <div class="collapse-left">
-                        <div class="collapse-left-icon">
-                            <img src="./assets/collapse-active.png" alt="">
-                        </div>
-                        <span class="collapse-text">Collapse</span>
-                    </div>
-                    <div class="collapse-right-icon">
-                            <img src="./assets/Group.png" alt="">
-                    </div>
-                </div>
+      <div class="sidebar">
+        <div>
+          <div class="sidebar-logo">
+            <img class="sidebar-logo-image" src="./assets/logo.jpg" alt="" />
+          </div>
+          <div class="sidebar-list">
+            <div class="sidebar-item">
+              <div class="sidebar-item-image">
+                <img
+                  class="sidebar-item-img"
+                  src="./assets/trade-active.png"
+                  alt=""
+                />
+              </div>
+              <span>Trade</span>
             </div>
+            <div class="sidebar-item active">
+              <div class="sidebar-item-image">
+                <img
+                  class="sidebar-item-img"
+                  src="./assets/Orders.png"
+                  alt=""
+                />
+              </div>
+              <span>Orders</span>
+            </div>
+            <div class="menu-children active">All</div>
+            <div class="menu-children">Open</div>
+            <div class="sidebar-item">
+              <div class="sidebar-item-image">
+                <img
+                  class="sidebar-item-img"
+                  src="./assets/History.png"
+                  alt=""
+                />
+              </div>
+              <span>History</span>
+            </div>
+            <div class="sidebar-item">
+              <div class="sidebar-item-image">
+                <img
+                  class="sidebar-item-img"
+                  src="./assets/settings.png"
+                  alt=""
+                />
+              </div>
+              <span>Settings</span>
+            </div>
+          </div>
         </div>
-        <div class="main-table ">
-            <div class="header-menu">
-                <div class="header-menu-item active">
-                    All
-                </div>
-                <div class="header-menu-item ">
-                    Open
-                </div>
+        <div class="deposit">
+          <div class="deposit-header">
+            <div class="deposit-header-logo">
+              <img src="./assets/Metamask.png" alt="" />
             </div>
-            <div class="main-table-layout">
-                <table class="items-center border-spacing-y-2 text-white w-full bg-transparent border-separate ">
-                    <thead class="main-table-header">
-                        <tr>
-                                <th
-                                 class="table-header-item"
-                                >
-                                 Date
-                                </th>
-                        </tr>
-                      </thead>
-                    <!-- <tbody class="main-table-body">
-                        <tr class="bg-gray-700 mt-2">
-                            <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center">
-                              <div class="relative  rounded-full">
-                               <img src="./assets/History.png" alt="">
-                              </div>
-                              <span class="ml-3 font-bold text-white">ten san pham</span>
-                            </th>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                             100000
-                            </td>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                              <i class="fas fa-circle text-orange-500 mr-2"></i>
-                              <span class="bg-saveBg rounded-[10px] px-3 py-[2px] block text-center overflow-hidden w-[50px]">
-                              100
-                              </span>
-                            </td>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                              <button
-                                class="py-3 px-5 bg-orange-400 rounded-[5px]"
-                              >
-                                ten
-                              </button>
-                            </td>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                <button>delete</button>
-                            </td>
-                            <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                              <div class="flex">
-                                <button
-                                  class="bg-pink-700 rounded-[10px] px-3 py-[2px] cursor-pointer"
-                                >
-                                    edit
-                                </button>
-                              </div>
-                            </td>
-                          </tr>
-                    </tbody> -->
-                  </table>
+            <div class="deposit-header-content">
+              <span class="deposit-header-content-top"> 0.000244 ETH </span>
+              <span class="deposit-header-content-bot">0xGD63...6DS9</span>
             </div>
+          </div>
+          <div class="deposit-button-list">
+            <button class="deposit-btn">Deposit</button>
+            <button class="deposit-btn withdraw-btn">Withdraw</button>
+          </div>
+          <div class="collapse">
+            <div class="collapse-left">
+              <div class="collapse-left-icon">
+                <img src="./assets/collapse-active.png" alt="" />
+              </div>
+              <span class="collapse-text">Collapse</span>
+            </div>
+            <div class="collapse-right-icon">
+              <img src="./assets/Group.png" alt="" />
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="main-table">
+        <div class="header-menu">
+          <div class="header-menu-item active">All</div>
+          <div class="header-menu-item">Open</div>
+        </div>
+
+        <div class="main-table-layout">
+          <table class="table-content">
+            <thead class="main-table-header">
+              <tr>
+                <th class="table-header-item">DATE</th>
+                <th class="table-header-item">MARKET</th>
+                <th class="table-header-item">SIDE</th>
+                <th class="table-header-item">PRICE</th>
+                <th class="table-header-item">AMOUNT</th>
+                <th class="table-header-item">VALUE</th>
+                <th class="table-header-item">FILLED</th>
+                <th class="table-header-item">STATUS</th>
+                <th class="table-header-item cancel-header">CANCEL ALL</th>
+              </tr>
+            </thead>
+
+            <tbody class="main-table-body"></tbody>
+          </table>
+          <div class="pagination-layout">
+            <span class="pagination-result">Showing 1 to 10 of 97 results</span>
+            <div class="pagination-list--number">
+              <button class="pagination-arrow">
+                <img
+                  class="arrow-left"
+                  src="./assets/Chevron left.svg"
+                  alt=""
+                />
+              </button>
+              <button class="pagenum-btn active">1</button>
+              <button class="pagenum-btn">2</button>
+              <button class="pagenum-btn">3</button>
+              <button class="pagenum-btn">...</button>
+              <button class="pagenum-btn">8</button>
+              <button class="pagenum-btn">9</button>
+              <button class="pagenum-btn">10</button>
+              <button class="pagination-arrow-right">
+                <img
+                  class="arrow-right"
+                  src="./assets/Chevron right.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+    <script src="./main.js"></script>
+  </body>
 </html>
