@@ -128,12 +128,16 @@
       </div>
       <div class="main-table padding-14 flex flex-col flex-1">
         <div class="header-menu gap-x-14 w-full items-center h-36 flex">
-          <div class="header-menu-item active">All</div>
-          <div class="header-menu-item">Open</div>
+          <div
+            class="header-menu-item rounded-md pt-2 pb-3 pr-2 pl-3 text-sm font-medium leading-5 active"
+          >
+            All
+          </div>
+          <div class="header-menu-item text-sm font-medium leading-5">Open</div>
         </div>
 
-        <div class="main-table-layout">
-          <table class="table-content">
+        <div class="main-table-layout overflow-hidden rounded-lg mt-14">
+          <table class="table-content bg-transparent items-center w-full">
             <thead class="main-table-header">
               <tr>
                 <th class="table-header-item">DATE</th>
@@ -148,28 +152,64 @@
               </tr>
             </thead>
 
-            <tbody class="main-table-body"></tbody>
+            <tbody class="main-table-body w-full"></tbody>
           </table>
-          <div class="pagination-layout">
-            <span class="pagination-result">Showing 1 to 10 of 97 results</span>
-            <div class="pagination-list--number">
-              <button class="pagination-arrow">
+          <div
+            class="pagination-layout h-62 flex items-center justify-between pt-3 pb-6 pr-3 pl-6"
+          >
+            <span class="pagination-result text-sm font-normal leading-5"
+              >Showing 1 to 10 of 97 results</span
+            >
+            <div class="pagination-list--number flex items-center">
+              <button
+                class="pagination-arrow p-9 justify-center flex items-center"
+              >
                 <img
-                  class="arrow-left"
+                  class="arrow-left w-5 h-5"
                   src="./assets/Chevron left.svg"
                   alt=""
                 />
               </button>
-              <button class="pagenum-btn active">1</button>
-              <button class="pagenum-btn">2</button>
-              <button class="pagenum-btn">3</button>
-              <button class="pagenum-btn">...</button>
-              <button class="pagenum-btn">8</button>
-              <button class="pagenum-btn">9</button>
-              <button class="pagenum-btn">10</button>
-              <button class="pagination-arrow-right">
+              <button
+                class="pagenum-btn flex justify-center items-center text-base font-medium leading-5 bg-white px-17 py-9 flex-col active"
+              >
+                1
+              </button>
+              <button
+                class="pagenum-btn flex justify-center items-center text-base font-medium leading-5 bg-white px-17 py-9 flex-col"
+              >
+                2
+              </button>
+              <button
+                class="pagenum-btn flex justify-center items-center text-base font-medium leading-5 bg-white px-17 py-9 flex-col"
+              >
+                3
+              </button>
+              <button
+                class="pagenum-btn flex justify-center items-center text-base font-medium leading-5 bg-white px-17 py-9 flex-col"
+              >
+                ...
+              </button>
+              <button
+                class="pagenum-btn flex justify-center items-center text-base font-medium leading-5 bg-white px-17 py-9 flex-col"
+              >
+                8
+              </button>
+              <button
+                class="pagenum-btn flex justify-center items-center text-base font-medium leading-5 bg-white px-17 py-9 flex-col"
+              >
+                9
+              </button>
+              <button
+                class="pagenum-btn flex justify-center items-center text-base font-medium leading-5 bg-white px-17 py-9 flex-col"
+              >
+                10
+              </button>
+              <button
+                class="pagination-arrow-right flex items-center justify-center bg-white p-9"
+              >
                 <img
-                  class="arrow-right"
+                  class="arrow-right w-5 h-5"
                   src="./assets/Chevron right.svg"
                   alt=""
                 />
