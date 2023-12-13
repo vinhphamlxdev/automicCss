@@ -8,13 +8,21 @@
   </head>
   <body>
     <div class="app">
-      <div class="sidebar">
+      <div
+        class="sidebar border-r-primary w-240 padding-10 bg-white h-screen flex flex-col sticky top-0"
+      >
         <div>
           <div class="sidebar-logo">
-            <img class="sidebar-logo-image" src="./assets/logo.jpg" alt="" />
+            <img
+              class="sidebar-logo-image w-122 h-22"
+              src="./assets/logo.jpg"
+              alt=""
+            />
           </div>
-          <div class="sidebar-list">
-            <div class="sidebar-item">
+          <div class="sidebar-list flex flex-col mt-4">
+            <div
+              class="sidebar-item pt-3 padding-b-10 pr-3 padding-l-10 cursor-pointer bg-white text-base leading-4 rounded-lg h-42 flex items-center gap-x-4"
+            >
               <div class="sidebar-item-image">
                 <img
                   class="sidebar-item-img"
@@ -24,7 +32,9 @@
               </div>
               <span>Trade</span>
             </div>
-            <div class="sidebar-item active">
+            <div
+              class="sidebar-item pt-3 padding-b-10 pr-3 padding-l-10 cursor-pointer bg-white text-base leading-4 rounded-lg h-42 flex items-center gap-x-4 active"
+            >
               <div class="sidebar-item-image">
                 <img
                   class="sidebar-item-img"
@@ -34,9 +44,19 @@
               </div>
               <span>Orders</span>
             </div>
-            <div class="menu-children active">All</div>
-            <div class="menu-children">Open</div>
-            <div class="sidebar-item">
+            <div
+              class="menu-children padding-b-10 padding-r-10 padding-t-10 text-primary padding-l-46 cursor-pointer bg-white text-base leading-4 h-38 rounded-lg active"
+            >
+              All
+            </div>
+            <div
+              class="menu-children padding-b-10 padding-r-10 padding-t-10 text-primary padding-l-46 cursor-pointer bg-white text-base leading-4 h-38 rounded-lg"
+            >
+              Open
+            </div>
+            <div
+              class="sidebar-item pt-3 padding-b-10 pr-3 padding-l-10 cursor-pointer bg-white text-base leading-4 rounded-lg h-42 flex items-center gap-x-4"
+            >
               <div class="sidebar-item-image">
                 <img
                   class="sidebar-item-img"
@@ -46,7 +66,9 @@
               </div>
               <span>History</span>
             </div>
-            <div class="sidebar-item">
+            <div
+              class="sidebar-item pt-3 padding-b-10 pr-3 padding-l-10 cursor-pointer bg-white text-base leading-4 rounded-lg h-42 flex items-center gap-x-4"
+            >
               <div class="sidebar-item-image">
                 <img
                   class="sidebar-item-img"
@@ -59,34 +81,53 @@
           </div>
         </div>
         <div class="deposit">
-          <div class="deposit-header">
-            <div class="deposit-header-logo">
+          <div class="deposit-header h-32 gap-x-2 flex items-center">
+            <div class="deposit-header-logo w-30 h-30">
               <img src="./assets/Metamask.png" alt="" />
             </div>
-            <div class="deposit-header-content">
-              <span class="deposit-header-content-top"> 0.000244 ETH </span>
-              <span class="deposit-header-content-bot">0xGD63...6DS9</span>
+            <div class="deposit-header-content flex flex-col">
+              <span
+                class="deposit-header-content-top font-semibold text-base leading-4"
+              >
+                0.000244 ETH
+              </span>
+              <span
+                class="deposit-header-content-bot leading-3 font-normal text-xs"
+                >0xGD63...6DS9</span
+              >
             </div>
           </div>
-          <div class="deposit-button-list">
-            <button class="deposit-btn">Deposit</button>
-            <button class="deposit-btn withdraw-btn">Withdraw</button>
+          <div class="deposit-button-list h-62 flex items-center gap-x-1">
+            <button
+              class="deposit-btn rounded-md w-100 leading-5 font-medium h-38 text-sm"
+            >
+              Deposit
+            </button>
+            <button
+              class="deposit-btn rounded-md w-100 leading-5 font-medium h-38 text-white text-sm withdraw-btn"
+            >
+              Withdraw
+            </button>
           </div>
-          <div class="collapse">
-            <div class="collapse-left">
-              <div class="collapse-left-icon">
+          <div class="collapse items-center justify-between gap-x-70 flex h-10">
+            <div
+              class="collapse-left h-10 padding-9 gap-x-14 flex items-center"
+            >
+              <div class="collapse-left-icon h-22 w-22">
                 <img src="./assets/collapse-active.png" alt="" />
               </div>
-              <span class="collapse-text">Collapse</span>
+              <span class="collapse-text text-sm font-medium leading-4"
+                >Collapse</span
+              >
             </div>
-            <div class="collapse-right-icon">
+            <div class="collapse-right-icon w-22 h22">
               <img src="./assets/Group.png" alt="" />
             </div>
           </div>
         </div>
       </div>
-      <div class="main-table">
-        <div class="header-menu">
+      <div class="main-table padding-14 flex flex-col flex-1">
+        <div class="header-menu gap-x-14 w-full items-center h-36 flex">
           <div class="header-menu-item active">All</div>
           <div class="header-menu-item">Open</div>
         </div>
