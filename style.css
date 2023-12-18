@@ -51,6 +51,11 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
+  font-family: "Inter", sans-serif;
+}
+
+.text-textColor {
+  color: #5a6689;
 }
 
 .app {
@@ -587,6 +592,10 @@ body {
   color: #1c1f27;
 }
 
+.table-body-item.text-textColor {
+  color: #5a6689;
+}
+
 .table-row-item.active {
   background-color: #ecedf0;
 }
@@ -706,4 +715,12 @@ body {
   border: 1px solid #291ccb;
   color: #1409a0;
   background-color: #ededfc;
+}
+
+.pb-2 {
+  padding-bottom: 8px;
+}
+
+.pr-3 {
+  padding-right: 12px;
 }/*# sourceMappingURL=style.css.map */

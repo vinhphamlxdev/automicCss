@@ -172,14 +172,14 @@ let htmlContent = arrData
     return `
     <tr class="table-row-item ${index % 2 !== 0 ? "active" : ""}">
     <td class="table-body-item">${item.date}</td>
-    <td class="table-body-item">${item.market}</td>
+    <td class="table-body-item text-textColor">${item.market}</td>
     <td class="table-body-item buy-btn ${
       item.side === "Buy" ? "" : "sell-btn"
     }">${item.side}</td>
-    <td class="table-body-item">${item.price}</td>
-    <td class="table-body-item">${item.amout}</td>
-    <td class="table-body-item">${item.value}</td>
-    <td class="table-body-item">${item.filled}</td>
+    <td class="table-body-item text-textColor">${item.price}</td>
+    <td class="table-body-item text-textColor">${item.amout}</td>
+    <td class="table-body-item text-textColor">${item.value}</td>
+    <td class="table-body-item text-textColor">${item.filled}</td>
     <td class="table-body-item">
       <button class="table-body-item--content status-btn ${
         item.status === "Open"
